@@ -1,0 +1,67 @@
+html.body{
+	padding: 0;
+	margin: 0;
+	background: #f1f1f1;
+	font-family: sans-serif;;
+	font-size:16px;
+}
+.container{
+	width: 700px;
+	margin: 10px auto;
+	background: #fff;
+	padding: 10px;
+}
+.container h1{
+	text-transform: uppercase;//chu hoa
+	font-size: 28px;
+}
+.container ul.tab{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	
+
+}
+.container ul.tab li{
+	background: #b14c38;
+	padding: 10px;
+	color: #fff;
+	border-radius: 3px;
+	cursor:pointer;
+	margin-right: 10px;
+	width: 80px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.container ul.product-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap:  wrap;
+}
+.container ul.product-list li img{
+	width: 220px;
+	height: 320px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#new , #best-sell{
+	display:  none;
+
+}
+ul.tab li.active{
+	background: #ee4d2d;
+}
+#new,#trend,#best-sell{
+	-webkit-animation:slide-down .3s ease-out;
+	-moz-animation:slide-down .3s ease-out;
+	-webkit-animation:slide-down 8s ease-in;
+	-moz-animation:slide-down 8s ease-in;
+}
+@-webkit-keyframes slide-down{
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+}

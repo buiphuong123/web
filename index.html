@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product List Tab</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Danh sachs san pham</h1>
+		<ul class="tab">
+			<li class="tab-item active" onclick="changeProductList('trend',this)">Pho bien </li>
+			<li class="tab-item" onclick="changeProductList('new',this)">Moi nhat </li>
+			<li class="tab-item" onclick="changeProductList('best-sell',this)">Ban chay </li>
+		</ul>
+
+		<div id="trend" class="animation">
+			<ul class="product-list">
+			    <li><img src="./image/d.jpg"/></li>
+				<li><img src="./image/a.jpg"/></li>
+				<li><img src="./image/b.jpg"/></li>
+				<li><img src="./image/c.jpg"/></li>
+
+				<li><img src="./image/e.jpg"/></li>
+				<li><img src="./image/f.jpg"/></li>
+			</ul>
+		</div>
+
+		<div id="new" class="animation">
+			<ul class="product-list">
+				<li><img src="./image/a.jpg"/></li>
+				<li><img src="./image/b.jpg"/></li>
+				<li><img src="./image/f.jpg"/></li>
+				<li><img src="./image/c.jpg"/></li>
+				<li><img src="./image/d.jpg"/></li>
+				<li><img src="./image/e.jpg"/></li>
+			</ul>
+		</div>
+
+		<div id="best-sell" class="animation">
+			<ul class="product-list">
+				<li><img src="./image/e.jpg"/></li>
+				<li><img src="./image/a.jpg"/></li>
+				<li><img src="./image/c.jpg"/></li>
+				<li><img src="./image/d.jpg"/></li>
+				<li><img src="./image/f.jpg"/></li>
+				<li><img src="./image/b.jpg"/></li>
+				
+			</ul>
+		</div>
+		
+	</div>
+
+	<script src="./js/product.js"></script>
+
+</body>
+</html>
